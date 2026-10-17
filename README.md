@@ -2,7 +2,7 @@
 
 Landing page sobre la práctica de ecuavóley en el coliseo parroquial de La Esperanza (Quevedo, Ecuador), desarrollada con HTML y CSS para la materia **Desarrollo de Aplicaciones Web y Móviles** de ESPOL.
 
-🔗 **Sitio en línea:** https://USUARIO.github.io/NOMBRE-DEL-REPOSITORIO/
+🔗 **Sitio en línea:** (https://davols-24.github.io/Landing-Page-El-ecuav-ley-de-las-6/)
 
 ## Sobre el proyecto
 
