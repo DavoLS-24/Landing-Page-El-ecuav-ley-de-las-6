@@ -2959,3 +2959,134 @@ input, select, textarea {
 			}
 
 	}
+
+/* Organización */
+
+	#organizacion .box {
+		height: 100%;
+	}
+
+	#organizacion h3 {
+		margin: 0 0 1em 0;
+	}
+
+	.jornada {
+		list-style: none;
+		counter-reset: paso;
+		padding: 0;
+		margin: 0;
+	}
+
+		.jornada li {
+			counter-increment: paso;
+			position: relative;
+			padding: 0 0 1.5em 3.75em;
+		}
+
+			.jornada li:before {
+				content: counter(paso);
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 2.5em;
+				height: 2.5em;
+				line-height: 2.5em;
+				border-radius: 50%;
+				background: #E8692C;
+				color: #fff;
+				font-weight: 800;
+				text-align: center;
+			}
+
+			.jornada li:after {
+				content: '';
+				position: absolute;
+				left: 1.2em;
+				top: 2.5em;
+				bottom: 0;
+				border-left: solid 2px #E8692C;
+				opacity: 0.35;
+			}
+
+			.jornada li:last-child {
+				padding-bottom: 0;
+			}
+
+				.jornada li:last-child:after {
+					display: none;
+				}
+
+			.jornada h4 {
+				font-weight: 800;
+				margin: 0 0 0.25em 0;
+			}
+
+			.jornada p {
+				margin: 0;
+			}
+
+	.whatsapp h3 .icon {
+		font-size: 2em;
+		vertical-align: middle;
+		margin-right: 0.15em;
+		color: #25D366;
+	}
+
+	.whatsapp .whatsapp-numero {
+		display: block;
+		font-size: 5em;
+		font-weight: 800;
+		line-height: 1.1;
+		color: #E8692C;
+	}
+
+	.whatsapp .whatsapp-texto {
+		font-size: 1.3em;
+		font-weight: 700;
+		margin: 0 0 1.5em 0;
+	}
+
+	.whatsapp .whatsapp-usos {
+		list-style: disc;
+		padding-left: 1.25em;
+		margin: 0;
+	}
+
+	#organizacion .roles-titulo {
+		margin: 2.5em 0 0 0;
+	}
+
+	.box.rol {
+		text-align: center;
+		padding: 2em 1.5em;
+	}
+
+		.box.rol .rol-imagen {
+			display: block;
+			width: 100%;
+			aspect-ratio: 4 / 3;
+			object-fit: cover;
+			border-radius: 5px;
+			margin: 0 0 1em 0;
+		}
+
+		.box.rol .rol-numero {
+			display: block;
+			font-size: 4em;
+			font-weight: 800;
+			line-height: 1.1;
+			color: #E8692C;
+		}
+
+		.box.rol h4 {
+			font-weight: 800;
+			font-size: 1.6em;
+			text-transform: uppercase;
+			letter-spacing: 0.05em;
+			margin: 0 0 0.5em 0;
+		}
+
+		.box.rol p {
+			font-size: 1.2em;
+			margin: 0;
+		}
