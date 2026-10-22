@@ -3090,3 +3090,120 @@ input, select, textarea {
 			font-size: 1.2em;
 			margin: 0;
 		}
+
+/* Resultados */
+
+	#resultados .box {
+		height: 100%;
+	}
+
+	.grafico h3 {
+		margin: 0 0 1.25em 0;
+	}
+
+		.grafico h3 .icon {
+			display: inline-block;
+			width: 2em;
+			height: 2em;
+			line-height: 2em;
+			border-radius: 50%;
+			background: #1B2A41;
+			color: #fff;
+			text-align: center;
+			font-size: 0.9em;
+			margin-right: 0.4em;
+		}
+
+	.barras {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+		.barras li {
+			display: grid;
+			grid-template-columns: 9em 1fr 3.5em;
+			align-items: center;
+			gap: 1em;
+			margin: 0 0 0.85em 0;
+		}
+
+			.barras li:last-child {
+				margin-bottom: 0;
+			}
+
+		.barras .barra {
+			display: block;
+			height: 1.1em;
+			background: #f0ece8;
+			border-radius: 1em;
+			overflow: hidden;
+		}
+
+		.barras .barra-relleno {
+			display: block;
+			width: 0;
+			height: 100%;
+			transition: width 1s ease;
+			background: #1B2A41;
+			border-radius: 1em;
+		}
+
+		.barras .barra-valor {
+			font-weight: 800;
+			color: #1B2A41;
+			text-align: right;
+		}
+
+		.barras .destacado .barra-relleno {
+			background: #E8692C;
+		}
+
+		.barras .destacado .barra-valor,
+		.barras .destacado .barra-etiqueta {
+			color: #E8692C;
+			font-weight: 800;
+		}
+
+	.box.impacto {
+		background: #1B2A41;
+		color: #fff;
+		text-align: center;
+		padding: 2.5em 1.5em;
+	}
+
+		.box.impacto .impacto-icono {
+			display: block;
+			font-size: 3em;
+			color: #E8692C;
+			margin: 0 0 0.25em 0;
+		}
+
+		.box.impacto p {
+			font-size: 1.3em;
+			font-weight: 700;
+			margin: 0;
+		}
+
+		.box.impacto .impacto-numero {
+			font-size: 3em;
+			font-weight: 800;
+			color: #E8692C;
+			vertical-align: middle;
+			margin-right: 0.15em;
+		}
+
+	#resultados .fuente {
+		font-style: italic;
+		text-align: center;
+		margin: 2em 0 0 0;
+	}
+
+	@media screen and (max-width: 736px) {
+
+		.barras li {
+			grid-template-columns: 7em 1fr 3em;
+			gap: 0.6em;
+		}
+
+	}
