@@ -2906,3 +2906,56 @@ input, select, textarea {
 			}
 
 	}
+/* Jugadores */
+
+	.intro-jugadores {
+		max-width: 48em;
+		margin: 0 auto 2.5em auto;
+		text-align: center;
+	}
+
+	.box.stat {
+		text-align: center;
+		height: 100%;
+		min-height: 22em;
+		padding: 5em 2em;
+	}
+
+		.box.stat .stat-numero {
+			display: block;
+			font-size: 8em;
+			font-weight: 800;
+			line-height: 1.2;
+			color: #E8692C;
+		}
+
+		.box.stat p {
+			margin: 0.75em 0 0 0;
+			font-size: 1.6em;
+			font-weight: 700;
+		}
+
+	@media screen and (max-width: 1280px) {
+
+		.box.stat .stat-numero {
+			font-size: 7em;
+		}
+
+	}
+
+	@media screen and (max-width: 736px) {
+
+		.box.stat {
+			min-height: 12em;
+			padding: 2.5em 1em;
+		}
+
+			.box.stat .stat-numero {
+				font-size: 3.5em;
+			}
+
+			.box.stat p {
+				font-size: 1.1em;
+			}
+
+	}
