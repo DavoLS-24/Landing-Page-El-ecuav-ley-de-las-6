@@ -2955,3 +2955,65 @@ input, select, textarea {
 			}
 
 	}
+
+
+/* ==========================================================
+   Sección: Footer de la home (mapa + tarjeta del coliseo - index.html)
+   ========================================================== */
+
+	#footer .mapa {
+		border-radius: 5px;
+		overflow: hidden;
+		border-bottom: solid 4px #E8692C;
+	}
+
+		#footer .mapa iframe {
+			display: block;
+			width: 100%;
+			height: 26em;
+			border: 0;
+		}
+
+	#footer .lugar {
+		position: relative;
+		background: rgba(250, 246, 239, 0.06);
+		border-top: solid 6px #E8692C;
+		border-radius: 5px;
+		padding: 2.5em 2em 2em 2em;
+		height: 100%;
+	}
+
+		#footer .lugar .lugar-icono {
+			display: block;
+			font-size: 3em;
+			color: #E8692C;
+			margin: 0 0 0.35em 0;
+		}
+
+		#footer .lugar header {
+			margin: 0 0 1.5em 0;
+		}
+
+		#footer .lugar ul.divided {
+			margin: 0 0 2em 0;
+		}
+
+			#footer .lugar ul.divided li {
+				padding: 0.75em 0;
+			}
+
+		#footer .lugar ul.actions {
+			margin: 0;
+		}
+
+	@media screen and (max-width: 980px) {
+
+		#footer .mapa iframe {
+			height: 20em;
+		}
+
+		#footer .lugar {
+			margin-top: 2em;
+		}
+
+	}
