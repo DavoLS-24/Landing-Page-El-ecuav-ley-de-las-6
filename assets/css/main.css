@@ -3017,3 +3017,147 @@ input, select, textarea {
 		}
 
 	}
+
+
+/* ==========================================================
+   Sección: ¿Cómo se organizan? (organizacion.html)
+   ========================================================== */
+
+	/* Roles en la cancha: porcentaje destacado */
+
+	.rol-destacado {
+		text-align: center;
+		margin: 0 0 2em 0;
+	}
+
+		.rol-destacado .rol-destacado-numero {
+			display: block;
+			font-size: 5em;
+			font-weight: 800;
+			line-height: 1em;
+			color: #E8692C;
+		}
+
+		.rol-destacado p {
+			font-size: 1.2em;
+			font-style: italic;
+			font-weight: 700;
+			margin: 0.25em 0 0 0;
+		}
+
+	/* ¿Qué posición juegan?: barras que se llenan según el % */
+
+	.posiciones li {
+		display: grid;
+		grid-template-columns: 1fr auto;
+		row-gap: 0.4em;
+		align-items: center;
+	}
+
+		.posiciones .posicion-nombre {
+			font-weight: 700;
+			color: #1B2A41;
+		}
+
+			.posiciones .posicion-nombre .icon {
+				color: #E8692C;
+				width: 1.5em;
+				text-align: center;
+				margin-right: 0.25em;
+			}
+
+		.posiciones .barra-valor {
+			grid-row: 1;
+			grid-column: 2;
+			font-weight: 800;
+			color: #E8692C;
+		}
+
+		.posiciones .barra {
+			grid-column: 1 / -1;
+			display: block;
+			height: 0.8em;
+			background: #f0ece8;
+			border-radius: 1em;
+			overflow: hidden;
+		}
+
+		.posiciones .barra-relleno {
+			display: block;
+			width: 0;
+			height: 100%;
+			background: #E8692C;
+			border-radius: 1em;
+			transition: width 1.2s ease;
+		}
+
+	/* Una jornada típica: pasos numerados */
+
+	ol.jornada {
+		list-style: none;
+		counter-reset: paso;
+		padding: 0;
+		margin: 0 0 2.5em 0;
+	}
+
+		ol.jornada li {
+			counter-increment: paso;
+			position: relative;
+			padding: 0 0 0 3.5em;
+			margin: 0 0 1.5em 0;
+		}
+
+			ol.jornada li:before {
+				content: counter(paso);
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 2.2em;
+				height: 2.2em;
+				line-height: 2.2em;
+				border-radius: 50%;
+				background: #1B2A41;
+				color: #fff;
+				font-weight: 800;
+				text-align: center;
+			}
+
+			ol.jornada li h4 {
+				font-size: 1.1em;
+				margin: 0 0 0.25em 0;
+			}
+
+			ol.jornada li p {
+				margin: 0;
+			}
+
+	/* Los grupos de WhatsApp */
+
+	.whatsapp h3 .icon {
+		color: #25D366;
+		font-size: 1.2em;
+		margin-right: 0.25em;
+	}
+
+	.whatsapp .whatsapp-numero {
+		font-size: 2em;
+		font-weight: 800;
+		color: #25D366;
+	}
+
+	.whatsapp .whatsapp-usos {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.75em;
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+		.whatsapp .whatsapp-usos li {
+			background: #f0ece8;
+			border-left: solid 4px #25D366;
+			border-radius: 5px;
+			padding: 0.4em 1em;
+			font-weight: 700;
+		}
