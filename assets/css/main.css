@@ -3161,3 +3161,253 @@ input, select, textarea {
 			padding: 0.4em 1em;
 			font-weight: 700;
 		}
+
+
+/* ==========================================================
+   Sección: Resultados en cifras (right-sidebar.html)
+   ========================================================== */
+
+	/* Video del partido */
+
+	.video {
+		margin: 0 0 2em 0;
+	}
+
+		.video video {
+			display: block;
+			width: 100%;
+			max-height: 32em;
+			border-radius: 5px;
+			background: #1B2A41;
+		}
+
+		.video figcaption {
+			font-size: 0.9em;
+			font-style: italic;
+			margin: 0.5em 0 0 0;
+		}
+
+	/* Cada estadística, separada por una línea fina */
+
+	.estadistica {
+		border-top: solid 1px #E6DED1;
+		padding: 1.75em 0 0.5em 0;
+	}
+
+		.estadistica h3 .icon,
+		.retos h3 .icon {
+			color: #E8692C;
+			margin-right: 0.25em;
+		}
+
+	/* Barras horizontales: etiqueta | barra | valor */
+
+	.barras {
+		list-style: none;
+		padding: 0;
+		margin: 1em 0 1.5em 0;
+	}
+
+		.barras li {
+			display: grid;
+			grid-template-columns: 13em 1fr 3.5em;
+			gap: 1em;
+			align-items: center;
+			margin: 0 0 0.6em 0;
+		}
+
+		.barras .barra {
+			display: block;
+			height: 1em;
+			background: #f0ece8;
+			border-radius: 1em;
+			overflow: hidden;
+		}
+
+		.barras .barra-relleno {
+			display: block;
+			width: 0;
+			height: 100%;
+			background: #1B2A41;
+			border-radius: 1em;
+			transition: width 1.2s ease;
+		}
+
+		.barras .barra-valor {
+			font-weight: 800;
+			color: #1B2A41;
+			text-align: right;
+		}
+
+		.barras .destacado .barra-relleno {
+			background: #E8692C;
+		}
+
+		.barras .destacado .barra-etiqueta,
+		.barras .destacado .barra-valor {
+			color: #E8692C;
+			font-weight: 800;
+		}
+
+	/* Impacto en la comunidad */
+
+	.estadistica.impacto p {
+		display: flex;
+		align-items: center;
+		gap: 0.5em;
+		font-size: 1.2em;
+		margin: 0.5em 0 1.5em 0;
+	}
+
+		.estadistica.impacto .impacto-numero {
+			font-size: 3em;
+			font-weight: 800;
+			line-height: 1em;
+			color: #E8692C;
+		}
+
+	/* Retos y propuestas */
+
+	.retos {
+		border-top: solid 1px #E6DED1;
+		padding: 1.75em 0 0 0;
+	}
+
+		.retos-encabezado,
+		.retos-lista li {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 1.5em;
+		}
+
+		.retos-encabezado {
+			font-weight: 800;
+			color: #1B2A41;
+			margin: 0 0 0.75em 0;
+		}
+
+			.retos-encabezado .fa-exclamation-triangle {
+				color: #E8692C;
+			}
+
+			.retos-encabezado .fa-check {
+				color: #25D366;
+			}
+
+		.retos-lista {
+			list-style: none;
+			padding: 0;
+			margin: 0 0 1.5em 0;
+		}
+
+			.retos-lista li {
+				margin: 0 0 1em 0;
+			}
+
+			.retos-lista p {
+				margin: 0;
+				padding: 0.75em 1em;
+				border-radius: 5px;
+				background: #f0ece8;
+			}
+
+			.retos-lista .reto {
+				border-left: solid 4px #E8692C;
+			}
+
+			.retos-lista .propuesta {
+				border-left: solid 4px #25D366;
+			}
+
+	.fuente {
+		font-size: 0.9em;
+		font-style: italic;
+		margin: 0;
+	}
+
+	/* Voces de la comunidad (cita destacada) */
+
+	.voces blockquote,
+	.citas blockquote {
+		border: 0;
+		padding: 0;
+		margin: 0;
+	}
+
+	.voces {
+		text-align: center;
+	}
+
+		.voces .voces-comillas {
+			display: block;
+			font-size: 3em;
+			color: #E8692C;
+			margin: 0 0 0.25em 0;
+		}
+
+		.voces blockquote p {
+			font-size: 1.15em;
+			font-style: italic;
+		}
+
+		.voces .voces-autor {
+			margin: 0 0 1.5em 0;
+		}
+
+	/* Lo que dicen los de las 6 (citas cortas) */
+
+	.citas li {
+		display: flex;
+		gap: 1em;
+		align-items: flex-start;
+	}
+
+		.citas .cita-icono {
+			flex-shrink: 0;
+			width: 2.2em;
+			height: 2.2em;
+			line-height: 2.2em;
+			border-radius: 50%;
+			background: #1B2A41;
+			color: #fff;
+			text-align: center;
+		}
+
+		.citas h4 {
+			font-size: 1em;
+			margin: 0 0 0.25em 0;
+		}
+
+		.citas blockquote p {
+			font-style: italic;
+			margin: 0 0 0.25em 0;
+		}
+
+		.citas .cita-autor {
+			font-size: 0.9em;
+			font-weight: 700;
+			margin: 0;
+		}
+
+	@media screen and (max-width: 736px) {
+
+		.barras li {
+			grid-template-columns: 1fr 3em;
+			row-gap: 0.3em;
+		}
+
+			.barras .barra {
+				grid-column: 1 / -1;
+				grid-row: 2;
+			}
+
+		.retos-encabezado {
+			display: none;
+		}
+
+		.retos-lista li {
+			grid-template-columns: 1fr;
+			gap: 0.5em;
+		}
+
+	}
