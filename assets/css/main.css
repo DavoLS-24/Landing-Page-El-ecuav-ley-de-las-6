@@ -3411,3 +3411,131 @@ input, select, textarea {
 		}
 
 	}
+
+
+/* ==========================================================
+   Sección: Participa - formulario (no-sidebar.html)
+   ========================================================== */
+
+	.participa form {
+		max-width: 52em;
+		margin: 0 auto 3em auto;
+	}
+
+	.participa-nota {
+		text-align: center;
+		font-size: 0.9em;
+	}
+
+	.obligatorio {
+		color: #E8692C;
+		font-weight: 800;
+	}
+
+	/* Fieldsets */
+
+	.participa fieldset {
+		border: solid 1px #E6DED1;
+		border-top: solid 4px #E8692C;
+		border-radius: 5px;
+		padding: 1.5em 2em 2em 2em;
+		margin: 0 0 2em 0;
+	}
+
+		.participa legend {
+			font-weight: 800;
+			color: #1B2A41;
+			padding: 0 0.5em;
+		}
+
+	.participa label,
+	.participa .grupo-titulo {
+		font-weight: 700;
+		color: #1B2A41;
+		margin: 0 0 0.5em 0;
+	}
+
+	/* Fecha y lista desplegable con el mismo estilo que los demás campos */
+
+	.participa input[type=date] {
+		display: block;
+		width: 100%;
+		padding: 0.75em 1em;
+		font-size: 1em;
+		border-radius: 5px;
+		border: solid 1px #E6DED1;
+		background: #fff;
+	}
+
+	.participa select {
+		background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%231B2A41' stroke-width='2'/%3E%3C/svg%3E") no-repeat right 1em center;
+		padding-right: 2.5em;
+	}
+
+	/* Opciones de radio y casillas */
+
+	.participa .opcion {
+		display: flex;
+		align-items: center;
+		gap: 0.6em;
+		margin: 0 0 0.4em 0;
+	}
+
+		.participa .opcion input {
+			-webkit-appearance: auto;
+			appearance: auto;
+			width: 1.1em;
+			height: 1.1em;
+			margin: 0;
+			accent-color: #E8692C;
+			flex-shrink: 0;
+		}
+
+		.participa .opcion label {
+			font-weight: 400;
+			margin: 0;
+		}
+
+	.participa textarea {
+		height: 8em;
+	}
+
+	.participa .contador {
+		text-align: right;
+		font-size: 0.85em;
+		margin: 0.25em 0 0 0;
+	}
+
+	.participa .consentimiento {
+		margin: 0 0 1.5em 0;
+	}
+
+		.participa .consentimiento label {
+			font-weight: 700;
+		}
+
+	.participa ul.actions {
+		text-align: center;
+	}
+
+	.mensaje-enviado {
+		text-align: center;
+		font-weight: 700;
+		color: #1B2A41;
+		background: #f0ece8;
+		border-left: solid 4px #25D366;
+		border-radius: 5px;
+		padding: 1em;
+	}
+
+		.mensaje-enviado .icon {
+			color: #25D366;
+		}
+
+	@media screen and (max-width: 736px) {
+
+		.participa fieldset {
+			padding: 1em 1em 1.5em 1em;
+		}
+
+	}
